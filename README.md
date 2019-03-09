@@ -1,7 +1,6 @@
-# placa-fipe-api
 <p align="center">
   <img width="100px" src="http://www.check-storage.com/Icon_v3.png"><br/>
-  <h4 align="center">API Placa Fipe</h2>
+  <h4 align="center">Placa Fipe API</h2>
 </p>
 
 ---
