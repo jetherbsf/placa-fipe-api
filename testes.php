@@ -4,12 +4,13 @@ require "cs_api.php";
 
 $CsApi = new CSAPI();
 
-$status = $veiculo->Pesquisar("GAB-2014"); // pode ser com ou sem hífem
+$success = $CsApi->Pesquisar("AAA-9999"); 
 
-if($status){
-    echo $CsApi->Retorno();
-}else{
-    echo $CsApi->ObterErro();
+if($success == false){
+    echo $CsApi->Erro();
+    return;
 }
+
+echo $CsApi->Retorno();
 
 ?>
