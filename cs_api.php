@@ -13,7 +13,7 @@ class CSAPI
             // The data to send to the API
             $postData = array(
                 'plate' => 'GAB2014',
-                'token' => "" //$this->authToken
+                'token' => $this->authToken
             );
 
             // Setup cURL
