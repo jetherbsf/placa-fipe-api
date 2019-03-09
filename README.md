@@ -68,6 +68,19 @@ Exemplo de retorno:
 }
 ```
 
+Caso o veículo não seja localizado na tabela Fipe, o retorno será vazio indicando NOK
+
+```
+    ...,
+    "fipe": {
+            "status": "NOK"
+            ...
+    }
+ }
+ 
+    
+```
+
 Os exemplos podem ser encontados no arquivo testes.php. 
 
 ### Obter Token
