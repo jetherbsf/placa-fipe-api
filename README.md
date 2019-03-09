@@ -37,7 +37,7 @@ echo $CsApi->Retorno();
 ```
 
 Layout do retorno:
-```php
+```json
 {
     "erro": "",
     "situacao": "Sem restrição",
