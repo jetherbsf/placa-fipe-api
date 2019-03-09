@@ -9,8 +9,6 @@
 
 ## API Modules:
 
----
-
 ### PHP
 Dependência: cURL library --> http://php.net/curl
 
