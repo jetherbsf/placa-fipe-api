@@ -26,18 +26,22 @@ require "cs_api.php";
 
 $CsApi = new CSAPI();
 
-$status = $CsApi->Pesquisar("AAA-9999"); 
+$sucesso = $CsApi->Pesquisar("Manual install"); 
 
-if($status){
-    echo $CsApi->Response();
-}else{
-    echo $CsApi->Erro();
+if(!$sucesso){
+    $err = $CsApi->Erro();
+    echo json_encode($err);
+    return;
 }
+
+$resp = $CsApi->Retorno();
+echo json_encode($resp);
 ```
 
 Exemplo de retorno:
 ```ruby
 {
+    "erro": "",
     "situacao": "Sem restrição",
     "modelo": "Modelo Teste",
     "marca": "Marca do Carro",
