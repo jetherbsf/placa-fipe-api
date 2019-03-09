@@ -79,9 +79,9 @@ Caso o veículo não seja localizado na tabela Fipe, o retorno será vazio indic
 ```
 
 #### Retornos de erro:
-1. `Acesso negado`
+1. `{"erro":"Acesso negado"}`
     O Token não é válido
-2. `Franquia excedida`
+2. `{"erro":"Franquia excedida"}`
     Excedeu o limite de consultas permitidas no mês 
 
 Os exemplos podem ser encontados no arquivo testes.php. 
