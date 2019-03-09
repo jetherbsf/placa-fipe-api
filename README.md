@@ -29,13 +29,11 @@ $CsApi = new CSAPI();
 $success = $CsApi->Pesquisar("AAA-9999"); 
 
 if($success == false){
-    $err = $CsApi->Erro();
-    echo json_encode($err);
+    echo $CsApi->Erro();
     return;
 }
 
-$resp = $CsApi->Retorno();
-echo json_encode($resp);
+echo $CsApi->Retorno();
 ```
 
 Exemplo de retorno:
