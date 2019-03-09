@@ -12,14 +12,14 @@ API Modules:
 
 ---
 
-##PHP
+###PHP
 Dependência: cURL library --> http://php.net/curl
 **Instalação**
 
 Copiar o arquivo cs_api.php para o seu sistema.
 Alterar a propriedade privada $authToken com o seu token de acesso. A classe de consumo da API já vem com um token de testes. Para obter um token particular, seguir os passos no final deste documento.
 
-**Uso**
+###Uso
 
 Exemplo de consulta:
 
@@ -55,21 +55,11 @@ Exemplo de retorno:
         ]
     }
 }
-```
 
 Os exemplos podem ser encontados no arquivo testes.php. 
 
-
 ---
 
-##C# .net
-(Construção)
-
----
-
-##React-Native - Typescript
-(Cnstrução)
-
-##Obter Token
+###Obter Token
 Gerar novo usuário e obter o token de acesso
 
