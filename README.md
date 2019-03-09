@@ -25,7 +25,7 @@ Exemplo de consulta:
 
 
 Exemplod e retorno:
-
+```ruby
 {
     "situacao": "Sem restrição",
     "modelo": "Q5",
@@ -55,7 +55,7 @@ Exemplod e retorno:
         ]
     }
 }
-
+```
 
 Os exemplos podem ser encontados no arquivo testes.php. 
 
