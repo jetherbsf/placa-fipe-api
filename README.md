@@ -31,7 +31,7 @@ $status = $CsApi->Pesquisar("AAA-9999");
 if($status){
     echo $CsApi->Retorno();
 }else{
-    echo $CsApi->ObterErro();
+    echo $CsApi->Erro();
 }
 ```
 
