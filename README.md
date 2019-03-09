@@ -26,9 +26,9 @@ require "cs_api.php";
 
 $CsApi = new CSAPI();
 
-$sucesso = $CsApi->Pesquisar("AAA-9999"); 
+$success = $CsApi->Pesquisar("AAA-9999"); 
 
-if(!$sucesso){
+if($success == false){
     $err = $CsApi->Erro();
     echo json_encode($err);
     return;
