@@ -1,7 +1,7 @@
 # placa-fipe-api
 API - Consulta pela placa a situação do veículo e cadastro na tabela Fipe.
 
-Para consultar pela placa, segue exemplo:
+Para consultar pela placa, segue exemplos:
 
 PHP
 (construção)
