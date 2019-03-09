@@ -39,23 +39,23 @@ Exemplo de retorno:
 ```ruby
 {
     "situacao": "Sem restrição",
-    "modelo": "Q5",
-    "marca": "Audi",
+    "modelo": "Modelo Teste",
+    "marca": "Marca do Carro",
     "cor": "Preta",
     "ano": "2010",
     "anoModelo": "2010",
-    "placa": "GAB2014",
+    "placa": "AAA9999",
     "uf": "SP",
-    "municipio": "PIRACICABA",
-    "chassi": "78964",
-    "versao": "AUDI Q5 3.2 V6 FSI",
+    "municipio": "SAO PAULO",
+    "chassi": "55555",
+    "versao": "3.2 V6",
     "fipe": {
         "status": "OK",
         "versao_depara": "",
         "veiculos": [
             {
-                "modelo": "Q5",
-                "versao": "Q5 3.2 FSI V6 Quattro S Tronic",
+                "modelo": "Modelo fipe",
+                "versao": "3.2 V6 V6 Tronic",
                 "ano_modelo": "2010",
                 "combustivel": "Gasolina",
                 "combustivel_versao": "Gasolina",
