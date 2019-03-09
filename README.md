@@ -21,6 +21,19 @@ Alterar a propriedade privada $authToken com o seu token de acesso. A classe de 
 
 Exemplo de consulta:
 
+```ruby
+require "cs_api.php";
+
+$CsApi = new CSAPI();
+
+$status = $CsApi->Pesquisar("AAA-9999"); 
+
+if($status){
+    echo $CsApi->Retorno();
+}else{
+    echo $CsApi->ObterErro();
+}
+```
 
 Exemplo de retorno:
 ```ruby
