@@ -92,4 +92,4 @@ Os exemplos podem ser encontados no arquivo [testes.php](./testes.php).
 
 ### Obter Token
 Gerar novo usuário e obter o token de acesso
-
+[ Em Construção ]
