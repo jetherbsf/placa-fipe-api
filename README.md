@@ -5,9 +5,9 @@
 
 ---
 
-**Placa Fipe API** é um componente que permite a consulta pela placa, da situação de um veículo. Devolve também o cadastro correspondente ao modelo do veículo da tabela Fipe.
+**Placa Fipe API** é um componente que permite a consulta da situação de um veículo pela placa. Devolve também o cadastro correspondente ao modelo do veículo na tabela Fipe.
 
-API Modules:
+## API Modules:
 
 ---
 
