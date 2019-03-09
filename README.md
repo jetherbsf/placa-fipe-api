@@ -26,7 +26,7 @@ require "cs_api.php";
 
 $CsApi = new CSAPI();
 
-$sucesso = $CsApi->Pesquisar("Manual install"); 
+$sucesso = $CsApi->Pesquisar("AAA-9999"); 
 
 if(!$sucesso){
     $err = $CsApi->Erro();
