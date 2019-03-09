@@ -14,7 +14,7 @@ Dependência: cURL library --> http://php.net/curl
 
 **Instalação**
 
-Copiar o arquivo cs_api.php para o seu sistema.
+Copiar o arquivo [cs_api.php](./cs_api.php) para o seu sistema.
 Alterar a propriedade privada $authToken com o seu token de acesso. A classe de consumo da API já vem com um token de testes. Para obter um token particular, seguir os passos no final deste documento.
 
 ### Uso
@@ -36,8 +36,8 @@ if($success == false){
 echo $CsApi->Retorno();
 ```
 
-Exemplo de retorno:
-```ruby
+Layout do retorno:
+```json
 {
     "erro": "",
     "situacao": "Sem restrição",
