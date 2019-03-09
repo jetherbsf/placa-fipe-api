@@ -36,8 +36,8 @@ if($success == false){
 echo $CsApi->Retorno();
 ```
 
-Exemplo de retorno:
-```ruby
+Layout do retorno:
+```php
 {
     "erro": "",
     "situacao": "Sem restrição",
