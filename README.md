@@ -84,7 +84,7 @@ Caso o veículo não seja localizado na tabela Fipe, o retorno será vazio indic
 1. `{"erro":"Acesso negado"}`
     O Token não é válido
 2. `{"erro":"Atingiu o limite de [quantiade limite] consultas"}`
-    Excedeu o limite de consultas permitidas no mês 
+    Excedeu o limite de consultas permitidas no mês para o plano gratuito
 
 Os exemplos podem ser encontados no arquivo [testes.php](./testes.php). 
 
