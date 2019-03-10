@@ -72,7 +72,7 @@ echo $CsApi->Retorno();
 }
 ```
 
-Caso o veículo não seja localizado na tabela Fipe, o retorno será vazio indicando NOK
+Caso o veículo não seja localizado na tabela Fipe, o retorno da propriedade "Fipe" será vazio indicando NOK
 
 ``` ...,
     "fipe": {
