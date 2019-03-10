@@ -4,11 +4,8 @@ require "cs_api.php";
 
 $CsApi = new CSAPI();
 
-$nome = "" // Opcional
-$email = "email@teste.com";
-$senha = "senha123";
 
-$success = $CsApi->Registrar($nome, $email, $senha); 
+$success = $CsApi->Registrar("email@teste.com", "senha123"); 
 
 if(!$success){
     echo $CsApi->Erro();

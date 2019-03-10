@@ -4,10 +4,7 @@ require "cs_api.php";
 
 $CsApi = new CSAPI();
 
-$email = "email@teste.com";
-$senha = "senha123";
-
-$success = $CsApi->Autenticar($email, $senha); 
+$success = $CsApi->Autenticar("email@teste.com", "senha123"); 
 
 if(!$success){
     echo $CsApi->Erro();
