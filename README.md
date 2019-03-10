@@ -93,7 +93,11 @@ Os exemplos podem ser encontados no arquivo [consumo_api.php](./consumo_api.php)
 ## Token
 
 #### Registrar()
-Para gerar um token, é necessário criar uma conta informando usuário e senha de livre ecolha. A API irá devolver um token que permite a  autenticação na API. Esta autenticação é necessária para realizar consulta de placas.
+Para gerar um token, é necessário criar uma conta informando usuário e senha de livre ecolha. A API irá devolver um token que permite a  autenticação necessária para realizar a consulta de placas.
+
+O token gerado é de uma conta gratuita e permite 50 consultas por mês.
+
+Por enquanto o sistema só oferece a opção de conta gratuita. Para obter uma conta com um limite maior de consultas, iremos disponibilizar em breve os planos.
 
 ```php
 require "cs_api.php";
