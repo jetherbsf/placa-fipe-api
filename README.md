@@ -86,8 +86,25 @@ Caso o veículo não seja localizado na tabela Fipe, o retorno será vazio indic
 2. `{"erro":"Atingiu o limite de [quantiade limite] consultas"}`
     Excedeu o limite de consultas permitidas no mês para o plano gratuito
 
-Os exemplos podem ser encontados no arquivo [testes.php](./testes.php). 
+Os exemplos podem ser encontados no arquivo [testes.php](./consumo_api.php).
 
-### Obter Token
+### Token
 Gerar novo usuário e obter o token de acesso
-[ Em Construção ]
+```php
+require "cs_api.php";
+$CsApi = new CSAPI();
+
+$success = $CsApi->Registrar("email@teste.com", "senha123"); 
+
+if(!$success){
+    echo $CsApi->Erro();
+    return;
+}
+
+echo $CsApi->Token();
+```
+#### Retorno:
+
+`$2a$08$Cf1f11ePArKlBJomM0F6a.u0Tq9FigSP8n7rwbbLgmW.R6ekqmgWe`
+
+Colocar a chave gerada na variável $authToken em cs_api.php
