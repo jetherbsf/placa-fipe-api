@@ -86,7 +86,7 @@ Caso o veículo não seja localizado na tabela Fipe, o retorno da propriedade "F
 1. `{"erro":"Acesso negado"}`
     O Token não é válido
 2. `{"erro":"Atingiu o limite de [quantiade limite] consultas"}`
-    Excedeu o limite de consultas permitidas no mês para o plano gratuito
+    Excedeu o limite de consultas permitidas no mês para o plano 
 
 Os exemplos podem ser encontados no arquivo [consumo_api.php](./consumo_api.php).
 
