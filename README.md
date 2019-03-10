@@ -115,7 +115,6 @@ echo $CsApi->Token();
 `$2a$08$Cf1f11ePArKlBJomM0F6a.u0Tq9FigSP8n7rwbbLgmW.R6ekqmgWe`
 Colocar a chave gerada na variável $authToken em cs_api.php
 
-#### Erros:
 `Usuário já existente` - Dados não foram suficientes para autenticar, mas o usuário (email) já existe
 
 #### Autenticar()
