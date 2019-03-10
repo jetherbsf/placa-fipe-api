@@ -88,7 +88,7 @@ Caso o veículo não seja localizado na tabela Fipe, o retorno será vazio indic
 2. `{"erro":"Atingiu o limite de [quantiade limite] consultas"}`
     Excedeu o limite de consultas permitidas no mês para o plano gratuito
 
-Os exemplos podem ser encontados no arquivo [testes.php](./consumo_api.php).
+Os exemplos podem ser encontados no arquivo [consumo_api.php](./consumo_api.php).
 
 ## Token
 
