@@ -9,17 +9,17 @@
 
 ## API Modules:
 
-### PHP
+## PHP
 Dependência: cURL library --> http://php.net/curl
 
-**Instalação**
+[Instalação](###Instalacao)
+
+### Instalação
 
 Copiar o arquivo [cs_api.php](./cs_api.php) para o seu sistema.
 Alterar a propriedade privada $authToken com o seu token de acesso. Para gerar um token gratuito de testes, seguir os passos no final deste documento.
 
-### Uso
-
-Exemplo de consulta:
+### Pesquisar
 
 ```php
 require "cs_api.php";
@@ -36,7 +36,8 @@ if($success == false){
 echo $CsApi->Retorno();
 ```
 
-Layout do retorno:
+#### retorno:
+
 ```json
 {
     "erro": "",
@@ -80,7 +81,7 @@ Caso o veículo não seja localizado na tabela Fipe, o retorno será vazio indic
  }
 ```
 
-#### Retornos de erro:
+#### Erros:
 1. `{"erro":"Acesso negado"}`
     O Token não é válido
 2. `{"erro":"Atingiu o limite de [quantiade limite] consultas"}`
