@@ -14,8 +14,8 @@ Dependência: cURL library --> http://php.net/curl
 - [Instalação](#Instalação)
 - [Pesquisar](#Pesquisar)
 #### Token
-- [Registrar()](#Token)
-- [Autenticar()](#Token)
+- [Registrar()](#registrar)
+- [Autenticar()](#registrar)
 
 ### Instalação
 
