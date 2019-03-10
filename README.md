@@ -7,19 +7,20 @@
 
 **Placa Fipe API** é um componente que permite a consulta da situação de um veículo pela placa. Devolve também o cadastro correspondente ao modelo do veículo na tabela Fipe.
 
-## API Modules:
+## API Modules (PHP):
 
-### PHP
+- [Instalação](#Instalação)
+- [Pesquisar()](#Pesquisar)
+- [Registrar()](#registrar)
+- [Autenticar()](#registrar)
+
+### Instalação
 Dependência: cURL library --> http://php.net/curl
 
-**Instalação**
-
 Copiar o arquivo [cs_api.php](./cs_api.php) para o seu sistema.
-Alterar a propriedade privada $authToken com o seu token de acesso. A classe de consumo da API já vem com um token de testes. Para obter um token particular, seguir os passos no final deste documento.
+Alterar a propriedade privada $authToken com o seu token de acesso. Para gerar um token gratuito de testes, seguir os passos no final deste documento.
 
-### Uso
-
-Exemplo de consulta:
+### Pesquisar
 
 ```php
 require "cs_api.php";
@@ -36,7 +37,8 @@ if($success == false){
 echo $CsApi->Retorno();
 ```
 
-Layout do retorno:
+#### Layout:
+
 ```json
 {
     "erro": "",
@@ -70,7 +72,7 @@ Layout do retorno:
 }
 ```
 
-Caso o veículo não seja localizado na tabela Fipe, o retorno será vazio indicando NOK
+Caso o veículo não seja localizado na tabela Fipe, o retorno da propriedade "Fipe"->"status" será NOK
 
 ``` ...,
     "fipe": {
@@ -80,14 +82,49 @@ Caso o veículo não seja localizado na tabela Fipe, o retorno será vazio indic
  }
 ```
 
-#### Retornos de erro:
+#### Erros:
 1. `{"erro":"Acesso negado"}`
     O Token não é válido
-2. `{"erro":"Franquia excedida"}`
-    Excedeu o limite de consultas permitidas no mês 
+2. `{"erro":"Atingiu o limite de [quantiade limite] consultas"}`
+    Excedeu o limite de consultas permitidas no mês para o plano 
 
-Os exemplos podem ser encontados no arquivo [testes.php](./testes.php). 
+Os exemplos podem ser encontados no arquivo [consumo_api.php](./consumo_api.php).
 
-### Obter Token
-Gerar novo usuário e obter o token de acesso
-[ Em Construção ]
+## Token
+
+#### Registrar()
+Para gerar um token, é necessário criar uma conta informando usuário e senha de livre ecolha. A API irá devolver um token que permite a  autenticação necessária para realizar a consulta de placas.
+
+O token gerado é de uma conta gratuita e permite 50 consultas por mês.
+
+Por enquanto o sistema só oferece a opção de conta gratuita. Para obter uma conta com um limite maior de consultas, iremos disponibilizar em breve os planos.
+
+```php
+require "cs_api.php";
+$CsApi = new CSAPI();
+
+$success = $CsApi->Registrar("email@teste.com", "senha123"); 
+
+if(!$success){
+    echo $CsApi->Erro();
+    return;
+}
+
+echo $CsApi->Token();
+```
+
+#### Retorno:
+`$2a$08$Cf1f11ePArKlBJomM0F6a.u0Tq9FigSP8n7rwbbLgmW.R6ekqmgWe`
+Colocar a chave gerada na variável $authToken em cs_api.php
+
+`Usuário já existente` - Dados não foram suficientes para autenticar, mas o usuário (email) já existe
+
+#### Autenticar()
+No método Registrar(),  Caso o usuário já exista e a autenticação for positiva, a API irá devolver o token.
+
+Utilizar o método Autenticar() para obter o token de um usuário já existente;
+
+```
+$CsApi->Autenticar("email@teste.com", "senha123"); 
+echo $CsApi->Token();
+```
