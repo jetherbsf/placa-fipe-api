@@ -37,7 +37,7 @@ if($success == false){
 echo $CsApi->Retorno();
 ```
 
-#### retorno:
+#### Layout:
 
 ```json
 {
