@@ -15,7 +15,7 @@ Dependência: cURL library --> http://php.net/curl
 **Instalação**
 
 Copiar o arquivo [cs_api.php](./cs_api.php) para o seu sistema.
-Alterar a propriedade privada $authToken com o seu token de acesso. A classe de consumo da API já vem com um token de testes. Para obter um token particular, seguir os passos no final deste documento.
+Alterar a propriedade privada $authToken com o seu token de acesso. Para gerar um token gratuito de testes, seguir os passos no final deste documento.
 
 ### Uso
 
@@ -88,8 +88,11 @@ Caso o veículo não seja localizado na tabela Fipe, o retorno será vazio indic
 
 Os exemplos podem ser encontados no arquivo [testes.php](./consumo_api.php).
 
-### Token
-Gerar novo usuário e obter o token de acesso
+## Token
+
+#### Registrar()
+Para gerar token, é necessário criar uma conta informando usuário e senha de sua ecolha. A API irá devolver um token para autenticação na consulta de placa
+
 ```php
 require "cs_api.php";
 $CsApi = new CSAPI();
@@ -103,8 +106,17 @@ if(!$success){
 
 echo $CsApi->Token();
 ```
+
 #### Retorno:
-
 `$2a$08$Cf1f11ePArKlBJomM0F6a.u0Tq9FigSP8n7rwbbLgmW.R6ekqmgWe`
-
 Colocar a chave gerada na variável $authToken em cs_api.php
+
+#### Autenticar()
+Ao consumir o método Registrar(),  Caso o usuário já exista e a autenticação for positiva, a API irá devolver o token.
+
+Você também pode autenticar um usuário para obter o token utilizando o método Autenticar();
+
+```
+$CsApi->Autenticar("email@teste.com", "senha123"); 
+echo $CsApi->Token();
+```
