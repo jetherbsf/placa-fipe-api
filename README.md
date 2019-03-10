@@ -9,14 +9,13 @@
 
 ## API Modules (PHP):
 
-Dependência: cURL library --> http://php.net/curl
-
 - [Instalação](#Instalação)
 - [Pesquisar()](#Pesquisar)
 - [Registrar()](#registrar)
 - [Autenticar()](#registrar)
 
 ### Instalação
+Dependência: cURL library --> http://php.net/curl
 
 Copiar o arquivo [cs_api.php](./cs_api.php) para o seu sistema.
 Alterar a propriedade privada $authToken com o seu token de acesso. Para gerar um token gratuito de testes, seguir os passos no final deste documento.
