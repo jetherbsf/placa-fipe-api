@@ -115,10 +115,13 @@ echo $CsApi->Token();
 `$2a$08$Cf1f11ePArKlBJomM0F6a.u0Tq9FigSP8n7rwbbLgmW.R6ekqmgWe`
 Colocar a chave gerada na variável $authToken em cs_api.php
 
-#### Autenticar()
-Ao consumir o método Registrar(),  Caso o usuário já exista e a autenticação for positiva, a API irá devolver o token.
+#### Erros:
+`Usuário já existente` - Dados não foram suficientes para autenticar, mas o usuário (email) já existe
 
-Você também pode autenticar um usuário para obter o token utilizando o método Autenticar();
+#### Autenticar()
+No método Registrar(),  Caso o usuário já exista e a autenticação for positiva, a API irá devolver o token.
+
+Utilizar o método Autenticar() para obter o token de um usuário já existente;
 
 ```
 $CsApi->Autenticar("email@teste.com", "senha123"); 
