@@ -93,7 +93,7 @@ Os exemplos podem ser encontados no arquivo [consumo_api.php](./consumo_api.php)
 ## Token
 
 #### Registrar()
-Para gerar token, é necessário criar uma conta informando usuário e senha de sua ecolha. A API irá devolver um token para autenticação na consulta de placa
+Para gerar um token, é necessário criar uma conta informando usuário e senha de livre ecolha. A API irá devolver um token que permite a  autenticação na API. Esta autenticação é necessária para realizar consulta de placas.
 
 ```php
 require "cs_api.php";
