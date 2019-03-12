@@ -19,7 +19,7 @@ class CSAPI
             );
 
             // Setup cURL
-            $ch = curl_init('http://codpass.com/app/api/');
+            $ch = curl_init('http://ckst.com.br/app/api/');
 
             curl_setopt_array($ch, array(
                 CURLOPT_POST => TRUE,
@@ -72,7 +72,7 @@ class CSAPI
             );
 
             // Setup cURL
-            $ch = curl_init('http://codpass.com/app/api/registrar/');
+            $ch = curl_init('http://ckst.com.br/app/api/registrar/');
 
             curl_setopt_array($ch, array(
                 CURLOPT_POST => TRUE,
@@ -114,7 +114,7 @@ class CSAPI
             );
 
             // Setup cURL
-            $ch = curl_init('http://codpass.com/app/api/autenticar/');
+            $ch = curl_init('http://ckst.com.br/app/api/autenticar/');
 
             curl_setopt_array($ch, array(
                 CURLOPT_POST => TRUE,
