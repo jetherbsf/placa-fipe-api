@@ -60,11 +60,12 @@ echo $CsApi->Retorno();
             {
                 "modelo": "Modelo fipe",
                 "versao": "3.2 V6 V6 Tronic",
+                "codigo_fipe": "056012-0",
                 "ano_modelo": "2010",
                 "combustivel": "Gasolina",
                 "combustivel_versao": "Gasolina",
                 "valor": "83907.00",
-                "portas": "",
+                "portas": "2P",
                 "cambio": "Automático"
             }
         ]
