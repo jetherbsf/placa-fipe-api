@@ -1,8 +1,13 @@
+IIZ9466
+
 <?php
 
 class CSAPI
 {
-    // Your access token
+   Vitori@13
+Vitori@13
+
+ // Your access token
     private $authToken = ''; // Para criar um token gratuito de testes, executar --> https://github.com/jetherbsf/placa-fipe-api
     
     private $apiResponse = [];
